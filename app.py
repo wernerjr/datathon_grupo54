@@ -3,6 +3,7 @@ import pandas as pd
 from utils import DataProcessor
 from io import BytesIO
 from xlsxwriter import Workbook
+from pyxlsb import open_workbook as open_xlsb
 
 class StreamlitApp:
 
