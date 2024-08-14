@@ -5,9 +5,9 @@ import joblib
 class DataProcessor:
     def __init__(self, dados):
         self.dados = dados
-        self.svm = joblib.load('modelo\svc_model.pkl')
-        self.scaler = joblib.load('modelo\scaler.pkl')
-        self.pca = joblib.load('modelo\pca.pkl')
+        self.svm = joblib.load('svc_model.pkl')
+        self.scaler = joblib.load('scaler.pkl')
+        self.pca = joblib.load('pca.pkl')
         colunas = list(self.dados.columns)
         if 'IAA' in colunas:
             if 'IEG' in colunas:
