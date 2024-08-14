@@ -38,8 +38,6 @@ class DataProcessor:
 
         X_predict_pca = self.pca.transform(X_predict_scaled)
 
-        y_predict_final = self.svm.predict(X_predict_pca)
-        #self.dados = y_predict_final
         y_predict_proba = self.svm.predict_proba(X_predict_pca)
         positive_probabilities = np.round(y_predict_proba[:, 1], 2)
         negative_probabilities = np.round(y_predict_proba[:, 0], 2)
