@@ -5,3 +5,4 @@ joblib
 xlsxwriter
 pyxlsb
 openpyxl
+scikit-learn
