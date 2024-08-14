@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from utils import DataProcessor
 from io import BytesIO 
+from xlsxwriter import Workbook
 
 class StreamlitApp:
 
